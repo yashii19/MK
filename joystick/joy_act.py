@@ -34,7 +34,7 @@ def gamepad_touch(gamepad_list):
         for event in gamepad.read_loop():
             #buttons
             if event.type == ecodes.EV_KEY:
-        #        print(event.type)
+                print(event.type)
                 if event.value == 1:
                     if event.code == xBtn:
                         print(namestr(gamepad, globals())," : X")
